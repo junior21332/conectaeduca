@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ConectaEduca - Plataforma gratuita de cursos de ingeniería de sistemas">
+    <meta name="keywords" content="cursos, programación, ingeniería, sistemas, gratis, online">
+    <meta name="author" content="ConectaEduca">
+    <title>ConectaEduca - Cursos Gratuitos de Ingeniería de Sistemas</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="book-open"></i>
+                </div>
+                <span class="logo-text">ConectaEduca</span>
+            </div>
+            <button class="menu-btn" aria-label="Menú">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home View -->
+        <div id="homeView">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>
+                    Aprende Ingeniería de Sistemas
+                    <span class="gradient-text">Totalmente Gratis</span>
+                </h1>
+                <p>Accede a cursos de calidad en programación, bases de datos, IA y más</p>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar cursos..." aria-label="Buscar cursos">
+                    <i data-lucide="search" class="search-icon"></i>
+                </div>
+            </section>
+
+            <!-- Categories Section -->
+            <section class="categories-section">
+                <h2 class="section-title">Categorías</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon blue">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <p class="category-name">Programación</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon green">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <p class="category-name">Bases de Datos</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon red">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <p class="category-name">Ciberseguridad</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon purple">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <p class="category-name">Inteligencia Artificial</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon orange">
+                            <i data-lucide="network"></i>
+                        </div>
+                        <p class="category-name">Redes</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon indigo">
+                            <i data-lucide="book-open"></i>
+                        </div>
+                        <p class="category-name">Arquitectura</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Courses Section -->
+            <section class="courses-section">
+                <h2 class="section-title">Cursos Populares</h2>
+                <div class="courses-grid" id="coursesGrid"></div>
+            </section>
+        </div>
+
+        <!-- Course Detail View -->
+        <div id="detailView" class="hidden course-detail"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ConectaEduca. Todos los derechos reservados.</p>
+            <p>Educación gratuita y accesible para todos</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
